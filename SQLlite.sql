@@ -9,3 +9,12 @@ CREATE TABLE Books (
     rating INTEGER NOT NULL,
     stock_count INTEGER NOT NULL
 )
+
+-- Esercizio-2
+
+ALTER TABLE Books 
+ADD COLUMN pages INTEGER NOT NULL
+ADD COLUMN publisher TEXT NOT NULL
+
+
+
