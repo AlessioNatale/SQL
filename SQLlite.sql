@@ -25,3 +25,7 @@ INSERT INTO Books VALUES (3, 'Whispers of the Wind', 'Amelia Blackburn', 'Romanc
 --Esercizio-4
 
 UPDATE Books SET price = 10.99, stock_count = 4 WHERE book_id = 2
+
+--Esercizio-5
+
+GRANT SELECT, UPDATE ON Books TO 'martin'@'localhost';
