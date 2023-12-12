@@ -33,3 +33,9 @@ GRANT SELECT, UPDATE ON Books TO 'martin'@'localhost';
 --Esercizio-6
 
 REVOKE UPDATE ON Books TO martin@localhost;
+
+--Esercizio-7
+
+BEGIN TRANSACTION;
+DELETE FROM Books WHERE book_id = 101;
+COMMIT;
