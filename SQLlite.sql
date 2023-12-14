@@ -45,3 +45,31 @@ COMMIT;
 BEGIN TRANSACTION;
 DELETE FROM Books WHERE book_id = 103;
 ROLLBACK;
+
+--Esercizio-9
+
+--1
+SELECT *
+FROM tested
+WHERE Sex = 'female' AND Survived = 1 AND Age > 30;
+
+--2
+SELECT AVG(Age)
+FROM tested
+WHERE Sex = 'male' AND Survived = 0;
+
+--3
+SELECT *
+FROM tested
+WHERE Fare BETWEEN 20 AND 50 AND Embarked = 'C';
+
+--4
+SELECT COUNT(*)
+FROM tested
+WHERE Pclass = 1 AND Survived = 1;
+
+--5
+SELECT *
+FROM tested
+WHERE Embarked = 'C' AND Fare > 75;
+
